@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ANGRY BIRD  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="text-align:center;">YOU KNOW WHATS INSIDE? </h2>
+
+<div class="container">
+
+  <h1 id="mainQuote">CUTE GIRL❤️</h1>
+
+  <!-- Angry Bird Photo Slider -->
+  <div id="photoBoxAb" class="photo-card" style="display:none;">
+    <img id="photoAb" class="photo">
+    <p id="quoteAb"></p>
+  </div>
+
+  <button id="abBtn">THO REVEAL KARU🕺</button>
+
+</div>
+
+<script>
+  // Step variable
+  let stepAb = 0;
+
+  // Photo data array
+  const angryBirdData = [
+    { img: "myphoto/love10.jpg", text: "You make me smile every day 😎" },
+    { img: "myphoto/love9.jpg", text: "Little moments are the best 💛" },
+    { img: "myphoto/love8.jpg", text: "Always thinking of you 💖" },
+    { img: "myphoto/love7.jpg", text: "You’re my happy place 🌸" },
+    { img: "myphoto/love6.jpg", text: "Forever love 🫦" }
+  ];
+
+  // Function to show next photo
+  function showNextAb() {
+    const photoBox = document.getElementById("photoBoxAb");
+    const photo = document.getElementById("photoAb");
+    const quote = document.getElementById("quoteAb");
+    const button = document.getElementById("abBtn");
+
+    if (stepAb < angryBirdData.length) {
+      photoBox.style.display = "block";
+      photo.src = angryBirdData[stepAb].img;
+      quote.innerText = angryBirdData[stepAb].text;
+
+      stepAb++;
+
+      if (stepAb === 1) {
+        button.innerText = "Next Surprise 💌";
+      }
+
+    } else {
+      button.innerText = "Go Home 🏠";
+      button.disabled = true;
+    }
+  }
+
+  // Attach click event to button
+  document.getElementById("abBtn").addEventListener("click", showNextAb);
+
+</script>
+
+</body>
+</html>

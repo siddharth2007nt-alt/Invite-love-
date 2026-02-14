@@ -1,0 +1,547 @@
+body{
+margin: 0;
+height: 100vh;
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/* Buttons */
+button{
+padding: 12px 22px;
+margin: 8px;
+font-family: "Poppins", "Nunito", "Quicksand", sans-serif;
+font-size: 16px;
+border-radius: 10px;
+border: none;
+background: pink;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover{
+background: deeppink;
+transform: scale(1.05);
+}
+
+/* Hide content initially */
+.content{
+display: none;
+}
+
+/* Heading style */
+.content h2{
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+color: black;
+text-align: center;
+}
+
+/* Paragraph style */
+.content p{
+font-family:'Pacifico', cursive;
+font-size:30 px;
+color:#5a2a2a;
+text-align: center;
+}
+body{
+animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{
+opacity: 0;
+transform: translateY(20px);
+}
+to{
+opacity: 1;
+transform: translateY(0);
+}
+}
+h1{
+animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{ transform: translateY(0); }
+50%{ transform: translateY(-10px); }
+100%{ transform: translateY(0); }
+}
+.card{
+backdrop-filter: blur(10px);
+transition: 0.4s;
+}
+
+.card:hover{
+transform: scale(1.02);
+box-shadow: 0 10px 30px rgba(255, 0, 150, 0.4);
+}
+button{
+transition: all 0.3s ease;
+}
+
+button:hover{
+transform: scale(1.08);
+box-shadow: 0 5px 20px rgba(255, 0, 120, 0.5);
+}
+body{
+background: linear-gradient(-45deg, #ff9a9e, #fbc2eb, #ff758c, #ff7eb3);
+background-size: 400% 400%;
+animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{ background-position: 0% 50%; }
+50%{ background-position: 100% 50%; }
+100%{ background-position: 0% 50%; }
+}
+html{
+scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(-45deg, #ff9a9e, #fbc2eb, #ff758c, #ff7eb3);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+color: white;
+overflow-x: hidden;
+}
+
+@keyframes gradientMove{
+0%{ background-position: 0% 50%; }
+50%{ background-position: 100% 50%; }
+100%{ background-position: 0% 50%; }
+}
+h1{
+font-family: 'Pacifico', cursive;
+font-size: 32px;
+text-align: center;
+animation: float 3s ease-in-out infinite;
+text-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+@keyframes float{
+0%{ transform: translateY(0); }
+50%{ transform: translateY(-10px); }
+100%{ transform: translateY(0); }
+}
+.content{
+display: none;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+margin: 20px;
+border-radius: 20px;
+backdrop-filter: blur(12px);
+background: rgba(255,255,255,0.15);
+box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity: 0;
+transform: translateY(20px);
+}
+to{
+opacity: 1;
+transform: translateY(0);
+}
+}
+button{
+padding: 12px 25px;
+margin: 10px;
+font-size: 16px;
+border-radius: 30px;
+border: none;
+cursor: pointer;
+color: white;
+background: linear-gradient(45deg, #ff4e8d, #ff7eb3);
+transition: 0.3s ease;
+}
+
+button:hover{
+transform: scale(1.1);
+box-shadow: 0 0 25px rgba(255,0,120,0.6);
+}
+
+@keyframes moveHearts{
+from{ background-position: 0 0; }
+to{ background-position: 0 1000px; }
+}
+body::before{
+content: "I love you bubudi   I love you bubudi   I love you bubudi   I love you bubudi";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 200%;
+font-size: 28px;
+font-weight: bold;
+color: white;
+opacity: 0.08;
+white-space: nowrap;
+pointer-events: none;
+animation: moveText 20s linear infinite;
+z-index: 0;
+}
+@keyframes moveText{
+0%{
+transform: translateY(100%);
+}
+100%{
+transform: translateY(-100%);
+}
+}
+text-shadow: 0 0 10px rgba(255,255,255,0.6);
+body{
+position: relative;
+z-index: 1;
+}
+
+.content{
+position: relative;
+z-index: 2;
+}
+.love-bg{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+z-index: 0;
+overflow: hidden;
+}
+
+.love-bg span{
+font-size: 28px;
+font-weight: bold;
+color: white;
+opacity: 0.15;
+animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp{
+0%{
+transform: translateY(100vh);
+}
+100%{
+transform: translateY(-100vh);
+}
+}
+opacity: 0.5;
+.content{
+position: relative;
+z-index: 2;
+}
+.photo {
+width: 100%;
+max-width: 400px;
+height: auto;
+object-fit: contain;
+border-radius: 15px;
+margin: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+transition: 0.3s;
+}
+
+.photo:hover{
+transform: scale(1.1);
+}
+body{
+font-family: Arial, sans-serif;
+
+text-align: center;
+margin: 0;
+padding: 20px;
+}
+
+.top-note{
+background: rgba(255,255,255,0.3);
+padding: 20px;
+border-radius: 20px;
+margin-bottom: 30px;
+}
+
+.photo-gallery{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.photo-card{
+background: rgba(255,255,255,0.3);
+padding: 15px;
+border-radius: 20px;
+width: 80%;
+max-width: 300px;
+}
+
+.photo{
+width: 100%;
+border-radius: 15px;
+}
+
+.photo-note{
+margin-top: 10px;
+font-size: 14px;
+}
+body {
+margin: 0;
+padding: 0;
+min-height: 100vh;
+background: linear-gradient(135deg, #ff9ecf, #ff69b4, #ff1493);
+background-size: 300% 300%;
+animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+body {
+background:#ff1493 ;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.photo-gallery {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+padding: 20px;
+}
+
+.photo-card {
+background: white;
+padding: 15px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+width: 80%;
+}
+
+.photo {
+width: 100%;
+border-radius: 10px;
+}
+.photo-card p {
+color: #ff4d88;
+font-size: 17px;
+margin-top: 12px;
+font-weight: bold;
+}
+.photo-card {
+color: white;
+}
+p {
+opacity: 0;
+}
+p {
+display: none;
+}
+body {
+color: #333 !important;
+}
+
+p {
+color: #333 !important;
+opacity: 1 !important;
+display: block !important;
+visibility: visible !important;
+}
+.photo-card {
+background: white;
+padding: 15px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+width: 80%;
+
+opacity: 0;
+transform: translateY(40px);
+animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.photo-card:nth-child(1) {
+animation-delay: 0.2s;
+}
+
+.photo-card:nth-child(2) {
+animation-delay: 0.4s;
+}
+
+.photo-card:nth-child(3) {
+animation-delay: 0.6s;
+}
+
+.photo-card:nth-child(4) {
+animation-delay: 0.8s;
+}
+.photo-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+body {
+background: #ffe6f0;
+text-align: center;
+font-family: cursive;
+}
+
+.container {
+margin-top: 100px;
+}
+
+button {
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+background: hotpink;
+color: white;
+cursor: pointer;
+margin-top: 20px;
+transition: 0.3s;
+}
+
+button:hover {
+transform: scale(1.1);
+}
+
+.photo {
+width: 250px;
+margin-top: 20px;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+body {
+font-family: Arial, sans-serif !important;
+}
+.image-container img {
+transition: transform 5s ease;
+}
+
+.image-container:hover img {
+transform: scale(1.1);
+}
+.image-container {
+position: relative;
+overflow: hidden;
+}
+
+.image-container img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+filter: brightness(0.8) contrast(1.1);
+}
+
+.image-container::before,
+.image-container::after {
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 40px;
+background: black;
+z-index: 2;
+}
+
+.image-container::before {
+top: 0;
+}
+
+.image-container::after {
+bottom: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif !important;
+  text-align: center;
+  color: #333 !important;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #ff66cc, #ff99cc, #ff33aa, #ff66ff); /* Barbie pink gradient */
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  position: relative;
+  z-index: 1;
+}
+/* Container ko flex centre banado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal centre */
+  justify-content: center; /* vertical centre if needed */
+  gap: 20px; /* photos ke beech gap */
+}
+
+/* Photo card */
+.photo-card {
+  width: auto;
+  max-width: 250px; /* chhoti card */
+  text-align: center; /* text centre */
+  margin: 0 auto; /* horizontal centre */
+}
+
+/* Photo itself */
+.photo {
+  width: 100%; /* card ke andar fit ho jaaye */
+  height: auto; /* aspect ratio maintain */
+  display: block;
+  margin: 0 auto; /* centre image */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* Container flex centre */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Photo card */
+.photo-card {
+  width: auto;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Photo */
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
